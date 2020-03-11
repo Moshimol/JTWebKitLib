@@ -1,0 +1,6 @@
+framework module JTWebKitLib {
+  umbrella header "JTWebKitLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,27 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - JTWebKitLib (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - JTWebKitLib (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  JTWebKitLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  JTWebKitLib: 2202c70cc10911f1d688909330b17c21ec7b5008
+
+PODFILE CHECKSUM: e261b871f7443b0d155fa28593b3759af0c673d3
+
+COCOAPODS: 1.8.4

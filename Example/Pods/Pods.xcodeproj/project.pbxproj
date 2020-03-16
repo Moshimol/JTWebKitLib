@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03AE46AD77795725909192B9CF6D0A28 /* Pods-JTWebKitLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AAAEC7DB94232EC3CFD5ECA943D2A6D /* Pods-JTWebKitLib_Tests-dummy.m */; };
+		090D8D85241FC41B008C0E9C /* QKScriptMessageHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 090D8D83241FC41B008C0E9C /* QKScriptMessageHandler.h */; };
+		090D8D86241FC41B008C0E9C /* QKScriptMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 090D8D84241FC41B008C0E9C /* QKScriptMessageHandler.m */; };
+		09EF8085241EA0BB00D6D2B3 /* JTWKWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 09EF8083241EA0BB00D6D2B3 /* JTWKWebViewController.h */; };
+		09EF8086241EA0BB00D6D2B3 /* JTWKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09EF8084241EA0BB00D6D2B3 /* JTWKWebViewController.m */; };
 		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */; };
 		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */; };
 		14C511527597E5846AB2627F791C7D8E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */; };
-		202E2C9853B88E8C8BB023A432284CE6 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCA273FB10B3103BD3031537BC1D2D7 /* ReplaceMe.m */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = EF53D290F564A9B10CEF56C9DC2010F2 /* UIImage+Compare.m */; };
 		3BCE734004AFF6A89BE789BCDFEC4EC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -66,18 +69,24 @@
 
 /* Begin PBXFileReference section */
 		04158DB844C2F5849C053AC5F2600A41 /* Pods-JTWebKitLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JTWebKitLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		08138A59138354D9181441B236AE978C /* JTWebKitLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTWebKitLib.framework; path = JTWebKitLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08138A59138354D9181441B236AE978C /* JTWebKitLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JTWebKitLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		090D8D80241FC1AF008C0E9C /* JTWebKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JTWebKit.h; path = JTWebKitLib/Classes/JTWebKit.h; sourceTree = "<group>"; };
+		090D8D82241FC3A5008C0E9C /* JTWebMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JTWebMacro.h; path = JTWebKitLib/Classes/JTWebMacro.h; sourceTree = "<group>"; };
+		090D8D83241FC41B008C0E9C /* QKScriptMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = QKScriptMessageHandler.h; path = JTWebKitLib/Classes/QKScriptMessageHandler.h; sourceTree = "<group>"; };
+		090D8D84241FC41B008C0E9C /* QKScriptMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = QKScriptMessageHandler.m; path = JTWebKitLib/Classes/QKScriptMessageHandler.m; sourceTree = "<group>"; };
+		09EF8083241EA0BB00D6D2B3 /* JTWKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JTWKWebViewController.h; path = JTWebKitLib/Classes/JTWKWebViewController.h; sourceTree = "<group>"; };
+		09EF8084241EA0BB00D6D2B3 /* JTWKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JTWKWebViewController.m; path = JTWebKitLib/Classes/JTWKWebViewController.m; sourceTree = "<group>"; };
 		0A3ACA72AE9B776E644F6D159AB3E80B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		13C8BBFE2D9E3A9C566221B1DE04E91C /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		1B8ABEEA76ECDF1975B6D0787700F929 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		2741A5475EBEBB526FC8BA6044AB45DA /* JTWebKitLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTWebKitLib-prefix.pch"; sourceTree = "<group>"; };
-		2941FEED809F9F011DFB5F082EDE7C5B /* Pods_JTWebKitLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JTWebKitLib_Tests.framework; path = "Pods-JTWebKitLib_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2941FEED809F9F011DFB5F082EDE7C5B /* Pods_JTWebKitLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTWebKitLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F1B7865AE067E3CB93D06AE165F0A3 /* Pods-JTWebKitLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JTWebKitLib_Example-dummy.m"; sourceTree = "<group>"; };
 		327F191FAB67C58F05AEEB1A60636D0F /* Pods-JTWebKitLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JTWebKitLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		35BEEEDD3643F354E6C51F6335569735 /* Pods-JTWebKitLib_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JTWebKitLib_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		39FF0D8350FE7E826224DBAE892655EB /* JTWebKitLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JTWebKitLib.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		39FF0D8350FE7E826224DBAE892655EB /* JTWebKitLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JTWebKitLib.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		3A83AE4362CF1D4764E00E4602A2D648 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		3BDF17ECE73ED30D96207A5200924263 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3BDF17ECE73ED30D96207A5200924263 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3CAA745BD5DC55225C85A56F95145774 /* Pods-JTWebKitLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JTWebKitLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3CD30C64AA39A93F9F5BDC94533537FB /* Pods-JTWebKitLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JTWebKitLib_Tests.modulemap"; sourceTree = "<group>"; };
 		3E29C50D3CDB46CBCBD20AFA13EB3D8D /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
@@ -86,14 +95,14 @@
 		4E542323FF91FD4BEEC7289765BB971F /* JTWebKitLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTWebKitLib.xcconfig; sourceTree = "<group>"; };
 		4EEBEAB7865B00BE942B0307B206ACAF /* Pods-JTWebKitLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JTWebKitLib_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4F3748752415AF5D747F2694345BD5CE /* Pods-JTWebKitLib_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JTWebKitLib_Example-Info.plist"; sourceTree = "<group>"; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		612797F02688473AC75B25CE5C6334B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		612797F02688473AC75B25CE5C6334B9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		63BEE5D6A30327B4C4FFECF7FBA9DA54 /* JTWebKitLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTWebKitLib-dummy.m"; sourceTree = "<group>"; };
 		716A9972B9D9103B54DB950893FAF104 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		746CC9C9E1B0E104CD1BA120C69A2526 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		8147AA7B96BC6F5AB0F9F353C28B82B3 /* Pods_JTWebKitLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_JTWebKitLib_Example.framework; path = "Pods-JTWebKitLib_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8147AA7B96BC6F5AB0F9F353C28B82B3 /* Pods_JTWebKitLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JTWebKitLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D2DF1ABBBD85F5E079D7D0EB5479BC /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		881154E5802CD22158D3E4062FA53864 /* Pods-JTWebKitLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JTWebKitLib_Example.modulemap"; sourceTree = "<group>"; };
 		88EE4F95531D217A595AA8D85A24FA39 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
@@ -102,7 +111,7 @@
 		8F1FE5C23F1BC485C54B92C32E78391F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		977770376017C1AAFB28698B1D8B2DA9 /* Pods-JTWebKitLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JTWebKitLib_Example-umbrella.h"; sourceTree = "<group>"; };
 		98FD387DFA194173633270BAF1BCD859 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A13D2309802FAC190827AA3D05C3F0A2 /* JTWebKitLib-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JTWebKitLib-Info.plist"; sourceTree = "<group>"; };
 		A25844C26701FA4BCAEF64150B56777F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		A688B1CDF653FBB0244B1FF49090830B /* Pods-JTWebKitLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JTWebKitLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -113,7 +122,6 @@
 		D30609ECD21FA51C8A342F1BB17A91D6 /* Pods-JTWebKitLib_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JTWebKitLib_Tests-Info.plist"; sourceTree = "<group>"; };
 		D3067EAFD5B0A06885968D137840DB70 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		DE35F81C954881204729C569018D98C0 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		DFCA273FB10B3103BD3031537BC1D2D7 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = JTWebKitLib/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		E0956940883830C651240E754E3ECC52 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		E354F8FD537351F26F7949B4EBFA5101 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		E5FA4FE02163E48FA3F0F3EFC45B6171 /* JTWebKitLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTWebKitLib-umbrella.h"; sourceTree = "<group>"; };
@@ -263,7 +271,6 @@
 				45E4BEB48F67ECE4946F86A2669DF19F /* Support Files */,
 				820C839EC049005CB82FAAF13AFDCB95 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -338,7 +345,12 @@
 		E3CF4F571C455F2DEFA40047CF320724 /* JTWebKitLib */ = {
 			isa = PBXGroup;
 			children = (
-				DFCA273FB10B3103BD3031537BC1D2D7 /* ReplaceMe.m */,
+				090D8D80241FC1AF008C0E9C /* JTWebKit.h */,
+				090D8D82241FC3A5008C0E9C /* JTWebMacro.h */,
+				09EF8083241EA0BB00D6D2B3 /* JTWKWebViewController.h */,
+				09EF8084241EA0BB00D6D2B3 /* JTWKWebViewController.m */,
+				090D8D83241FC41B008C0E9C /* QKScriptMessageHandler.h */,
+				090D8D84241FC41B008C0E9C /* QKScriptMessageHandler.m */,
 				A78A382EFBFD4523D6BE55FF4AFD68F8 /* Pod */,
 				081B96CB73EAF70357B26229EBB4031B /* Support Files */,
 			);
@@ -377,7 +389,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090D8D85241FC41B008C0E9C /* QKScriptMessageHandler.h in Headers */,
 				F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				09EF8085241EA0BB00D6D2B3 /* JTWKWebViewController.h in Headers */,
 				00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */,
 				C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */,
 				90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */,
@@ -541,7 +555,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				75457A0B6167A28D50E7AC78EA66F1F5 /* JTWebKitLib-dummy.m in Sources */,
-				202E2C9853B88E8C8BB023A432284CE6 /* ReplaceMe.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,11 +566,13 @@
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
 				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
+				090D8D86241FC41B008C0E9C /* QKScriptMessageHandler.m in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
 				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
 				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
 				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
 				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
+				09EF8086241EA0BB00D6D2B3 /* JTWKWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,8 +736,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
